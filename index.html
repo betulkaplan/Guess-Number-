@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Guess the Number in My Mind!</h1>
+    <div class="container">
+        <div class="game-box">
+            <div id="level-box">
+                <input type="radio" id="easy" name="level" value="10" required>
+                <label for="easy">Easy between 0-10</label>
+                <input type="radio" id="medium" name="level" value="100">
+                <label for="medium">Medium between 0-100</label>
+                <input type="radio" id="hard" name="level" value="1000">
+                <label for="hard">Hard between 0-1000</label>
+            </div>
+            <div class="text-box">
+                <input id="input-box" type="text" name="" id="">
+                <button id="submit-btn" class="submit-btn btn btn-white btn-animate">Check</button>
+            </div>
+            <div class="message" id="info-message">
+                <div>Status: <span id="statusMsg">Enter a number pls</span></div><br>
+                <div>Your answer: <span id="uranswertMsg">0</span></div><br>
+                <div>Attempt left: <span id="attemptMsg">0</span></div>
+            </div>
+            <img id="congrats" src="https://www.freepnglogos.com/uploads/fireworks-png/fireworks-png-elegant-border-clip-art-joy-studio-design-gallery-best-0.png" alt="">
+        </div>
+    </div>
+    <a href="https://www.freepnglogos.com/pics/fireworks">Fireworks from freepnglogos.com</a>
+</body>
+<script src="app.js"></script>
+</html>

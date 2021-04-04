@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: pink;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.game-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#input-box {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  transition: all 0.5s ease;
+  outline: none;
+}
+#input-box:hover {
+  box-shadow: 0 0 0 2pt red;
+}
+#submit-btn {
+  width: 50px;
+  height: 50px;
+  background-color: tomato;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease;
+}
+#submit-btn:hover {
+  box-shadow: 0 0 0 2pt red;
+}
+
+#congrats {
+  width: 300px;
+  height: 300px;
+}
