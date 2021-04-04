@@ -68,9 +68,10 @@ function showInput(){
         }
         else{
             attempt = 0;
+            levelBox.style.display = "block";
             //answer = Math.trunc(Math.random()*100);
             statusMsg.style.backgroundColor = 'red';
-            statusMsg.textContent = 'sorry you are out of attempts';
+            statusMsg.textContent = 'sorry you are out of attempts \n Try again pls';
             console.log('exceed attempt limit')
         }
         
