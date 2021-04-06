@@ -16,6 +16,8 @@ let attempt = 0;
 var answer; //Math.trunc(Math.random()*limit);
 
 
+
+
 function checkLevel(){
     if(attempt == 0){
         if(easy.checked == true){limit = 10;} 
@@ -93,8 +95,16 @@ function checkOut(){
         check.textContent = 'Check'
 }
 
+
 check.addEventListener('click', checkLevel);
 check.addEventListener('click', showInput);
+
+user_input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     check.click();
+    }
+  });
 
 
 function randomChangeColor(){
